@@ -1,0 +1,5 @@
+adapter_settings:
+  global:
+    timeout_seconds: 10
+    retry_count: 3
+    retry_delay_seconds: 5

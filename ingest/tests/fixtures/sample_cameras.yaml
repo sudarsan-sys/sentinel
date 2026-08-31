@@ -1,0 +1,8 @@
+cameras:
+  - id: "cam_fixture_1"
+    source_type: "rtsp_onvif"
+    source_uri: "fixture.mp4"
+    department: "Test Dept"
+    vendor: "Test Vendor"
+    lat: 0.0
+    lon: 0.0

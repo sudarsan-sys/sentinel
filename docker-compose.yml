@@ -1,0 +1,26 @@
+services:
+  mediamtx:
+    image: bluenviron/mediamtx:1
+    environment:
+      - MTX_RTSPTRANSPORTS=tcp
+      - MTX_WEBRTCADDITIONALHOSTS=127.0.0.1
+    ports:
+      - "8554:8554"
+      - "1935:1935"
+      - "8888:8888"
+      - "8889:8889"
+      - "8892:8892"
+      - "8890:8890/udp"
+      - "8189:8189/udp"
+      - "8893:8893/udp"
+    volumes:
+      - ./infrastructure/docker/mediamtx/mediamtx.yml:/mediamtx.yml
+    
+  postgres:
+    image: postgres:15
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: sentinel
+    ports:
+      - "5432:5432"

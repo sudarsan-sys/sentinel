@@ -1,0 +1,14 @@
+paths:
+  cam1:
+    source: publisher
+  cam2:
+    source: publisher
+
+protocols: [tcp, udp]
+rtsp: true
+rtmp: no
+hls: no
+webrtc: true
+
+rtspAddress: :8554
+webrtcAddress: :8889

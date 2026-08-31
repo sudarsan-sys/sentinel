@@ -1,0 +1,16 @@
+cameras:
+  - id: "cam1"
+    source_type: "rtsp_onvif"
+    source_uri: "../infrastructure/sample-videos/sample1.mp4"
+    department: "Traffic Police"
+    vendor: "Generic RTSP"
+    lat: 23.0225
+    lon: 72.5714
+
+  - id: "cam2"
+    source_type: "mock_vendor"
+    source_uri: "../infrastructure/sample-videos/sample2.mp4"
+    department: "Municipal Corp"
+    vendor: "FakeVision SDK"
+    lat: 23.0300
+    lon: 72.5800
